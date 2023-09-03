@@ -4,3 +4,6 @@ sudo pacman -S github-cli
 
 - Set to zsh, but still getting fish errors:
   - Turns out ~/.config/alacritty/alacritty.yml still had this set to `/bin/fish`
+
+# See ./waynergy.sh for how to run
+sudo pacman -S waynergy-cli
