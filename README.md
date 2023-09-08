@@ -10,6 +10,9 @@ sudo pacman -S 1password
 sudo pacman -S neovim python-pynvim wl-clipboard
 sudo pacman -S github-cli
 sudo pacman -S waynergy-cli
+sudo pacman -S tmux
+sudo pacman -S clang
+sudo pacman -S git-delta
 ```
 
 Notes:
@@ -23,13 +26,22 @@ Notes:
 ```
 cd ~/Development/projects && gh repo clone dotfiles
 sudo pacman -S tree-sitter-cli
-sudo pacman -S yaml-language-server
+sudo pacman -S yaml-language-server yamllint
 sudo pacman -S lua-language-server
+sudo pacman -S vim-language-server
+sudo pacman -S bash-language-server
+sudo pacman -S vscode-json-languageserver
+sudo pacman -S ruff-lsp pyright
 sudo pacman -S marksman
 sudo pacman -S typos
+sudo pacman -S taplo
 sudo paru -S prosemd-lsp
 sudo paru -S efm-langserver
+sudo paru -S vale
+cp ~/Development/projects/dotfiles/.tmux.conf ~/
 ```
+
+Do things here: https://github.com/datasift/gitflow
 
 ## Rust
 
@@ -44,7 +56,7 @@ paru -S chruby
 echo 'source /usr/share/chruby/chruby.sh' >> ~/.zshenv
 paru -S ruby-install
 rehash
-ruby-install 3
+ruby-install 3 -- --enable-shared
 ```
 
 ## Node
@@ -83,8 +95,18 @@ sudo pacman -S tutanota-desktop-bin
 
 # 3. Leisure things
 
-# Install Cider for music
+## Install Cider for music
 
 ```
 sudo pacman -S cider (from chronic-aur)
+```
+
+## MonoLisa fonts
+
+First, download the founds from iCloud drive.
+
+```
+mkdir -p ~/.local/share/fonts/otf/MonoLisaCustomNerdy/
+cp ~/Downloads/MonoLisa* ~/.local/share/fonts/otf/MonoLisaCustomNerdy
+fc-cache
 ```
