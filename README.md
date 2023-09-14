@@ -77,7 +77,7 @@ fnm default 18
 ## CLI
 
 ```
-sudo pacman -S zoxide exa ripgrep bat topgrade
+sudo pacman -S zoxide exa ripgrep bat topgrade lazygit
 cargo install zr
 ```
 
